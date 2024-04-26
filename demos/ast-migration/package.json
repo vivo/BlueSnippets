@@ -1,0 +1,29 @@
+{
+	"name": "ast-migration-demo",
+	"version": "0.0.1",
+	"description": "a ast based migration demo",
+	"author": "weixing <11101493@bbktel.com>",
+	"private": true,
+	"scripts": {
+		"migration": "node .migration/bin.js"
+	},
+	"devDependencies": {
+		"@vue/component-compiler-utils": "^3.3.0",
+		"babel-loader": "^9.1.2",
+		"chalk": "^2.0.1",
+		"css-loader": "^6.7.3",
+		"fs-extra": "^10.1.0",
+		"gogocode": "1.0.53",
+		"less": "^3.13.1",
+		"less-loader": "^7.3.0",
+		"ora": "^1.2.0",
+		"postcss": "^8.4.28",
+		"postcss-less": "^6.0.0",
+		"postcss-loader": "^7.2.4",
+		"postcss-sass": "^0.5.0",
+		"postcss-scss": "^4.0.7",
+		"prettier": "^3.2.5",
+		"vue": "^3.4.23",
+		"vue-template-compiler": "^2.7.14"
+	}
+}
