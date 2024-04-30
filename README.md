@@ -3,6 +3,6 @@
 
 # 文章列表 2024
 
-- 一次基于AST的大规模代码迁移实践  [Demo代码](./demo/ast-migration)
+- 一次基于AST的大规模代码迁移实践  [Demo代码](./demos/ast-migration)
 
 
