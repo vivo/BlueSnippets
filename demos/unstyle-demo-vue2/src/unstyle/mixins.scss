@@ -1,0 +1,93 @@
+$namespace: 'us';
+$element-separator: '__';
+$modifier-separator: '--';
+
+/* BEM Start
+ -------------------------- */
+@mixin b($block) {
+  $B: $namespace+'-'+$block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin e($element, $block: null) {
+  $E: $element !global;
+  $selector: &;
+  $currentSelector: "";
+  $b: "";
+
+  @if($block != null) {
+    $b: $namespace+'-'+$block;
+  } @else {
+    $b: $B;
+  }
+
+  @each $unit in $element {
+    $currentSelector: #{$currentSelector + "." + $b + $element-separator + $unit + ","};
+  }
+
+  @if hitAllSpecialNestRule($selector) {
+    @at-root {
+      #{$selector} {
+        #{$currentSelector} {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @at-root {
+      #{$currentSelector} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + $selector + $modifier-separator + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+/* BEM End
+ -------------------------- */
+
+@mixin line-generator($left, $width) {
+  position: absolute;
+  left: $left;
+  width: $width;
+  height: 1px;
+  background-color: #F1F1F2;
+  content: '';
+  z-index: 1;
+}
+
+@mixin line($direction: after, $spacing: null) {
+  $left: 0;
+  $width: 100%;
+  @if ($spacing) {
+    $width: calc(100% - $spacing * 2);
+    $left: $spacing;
+  }
+  @if($direction == "before") {
+    &:before {
+      @include line-generator($left, $width);
+      top: 0;
+    }
+  } @else {
+    &:after {
+      @include line-generator($left, $width);
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../mixins";
+@import "../../section/src/main";
+
+@mixin module-biz() {
+  position: relative;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+@mixin module() {
+  $block: module;
+
+  @include b($block) {
+    width: 100%;
+    & > {
+      @include section();
+    }
+  }
+
+  @include e(biz, $block) {
+    @include m(header) {
+      @include module-biz();
+      @include line(after)
+    }
+    @include m(footer) {
+      @include module-biz();
+      @include line(before)
+    }
+    @include m(body) {
+      @include module-biz();
+      padding: 16px;
+      background-color: #F7F8FC;
+
+      & + {
+        @include e(biz, $block){
+          @include m(body) {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+

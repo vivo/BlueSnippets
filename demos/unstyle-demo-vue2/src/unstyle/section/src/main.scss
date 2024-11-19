@@ -1,0 +1,36 @@
+@import "../../mixins";
+
+@mixin section-biz {
+  position: relative;
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+@mixin section() {
+  $block: section;
+
+  @include b($block) {
+    &:first-of-type {
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+    }
+    &:last-of-type {
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+
+  @include e(biz, $block) {
+    @include m(header) {
+      @include section-biz();
+      @include line(after, 12px);
+    }
+    @include m(footer) {
+      @include section-biz();
+      @include line(before, 12px);
+    }
+    @include m(body) {
+      @include section-biz();
+    }
+  }
+}
