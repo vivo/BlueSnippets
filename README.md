@@ -3,6 +3,8 @@
 
 # 文章列表 2024
 
+- 纯前端实现图片伪3D视差效果
+  - [Demo 代码](./demos/parallax)
 - 一次基于AST的大规模代码迁移实践
   - [Demo 代码](./demos/ast-migration)
 - Unstyle 前端统一样式库设计 @孙茂斌
