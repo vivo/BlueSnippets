@@ -5,6 +5,10 @@
 # 文章列表 2025
 
 - 纯前端实现图片伪3D视差效果
+  - [Demo 代码](./demos/ai-quickdraw)
+  
+
+- 纯前端实现图片伪3D视差效果
   - [Demo 代码](./demos/parallax)
 
 # 文章列表 2024

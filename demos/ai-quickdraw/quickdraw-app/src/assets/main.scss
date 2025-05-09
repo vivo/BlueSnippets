@@ -1,0 +1,19 @@
+@import "styles/form.scss";
+@import "styles/spacing.scss";
+@import "styles/utilities.scss";
+@import "styles/bootstrap.scss";
+
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  @media only screen and (max-width: 600px) {
+    overflow: hidden;
+  }
+}
+
+* {
+  outline: none !important;
+} 

@@ -1,0 +1,41 @@
+{
+  "name": "doodle-classifier-vue-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint --fix"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.27.1",
+    "@tensorflow/tfjs": "^4.6.0",
+    "axios": "^1.6.0",
+    "bootstrap": "^5.2.3",
+    "core-js": "^3.8.3",
+    "date-fns": "^2.29.3",
+    "rxjs": "^7.8.1",
+    "vue": "^2.7.14",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.16.3",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.20.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "typescript": "~4.9.5",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
