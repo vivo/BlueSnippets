@@ -4,10 +4,12 @@
 
 # 文章列表 2025
 
+- 微信小程序端智能项目工程化实践
+  - [Demo 代码](./demos/weixin-mini-ai)
+
 - 利用端侧AI模型（CNN）实现AI你画我猜小游戏
   - [Demo 代码](./demos/ai-quickdraw)
   
-
 - 纯前端实现图片伪3D视差效果
   - [Demo 代码](./demos/parallax)
 

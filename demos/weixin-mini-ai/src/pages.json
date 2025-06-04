@@ -1,0 +1,32 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "端智能",
+				"componentPlaceholder": {
+          "tf-com": "view"
+        },
+        "usingComponents": {
+          "tf-com": "/sdkPackages/tensorflow/index"
+        }
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "sdkPackages",
+			"pages": [
+				{
+					"path": "tensorflow/index"
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "端智能",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
