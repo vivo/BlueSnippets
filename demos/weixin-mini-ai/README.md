@@ -1,9 +1,9 @@
 # 微信小程序端智能项目工程化实践案例
 
 ## 项目介绍
-本项目基于uniapp框架使用了TensorflowJS推理和微信原生推理实现微信小程序端智能能力，并针对以下问题进行了处理：
+本项目基于uniapp框架使用了TensorFlow.js推理和微信原生推理实现微信小程序端智能能力，并针对以下问题进行了处理：
 - 开发体验、支持范围：组合两种方案，保障开发体验，最大化覆盖微信版本范围
-- 代码包体积：异步分包加载，解决Tensorflow.js相关依赖超包问题
+- 代码包体积：异步分包加载，解决TensorFlow.js相关依赖超包问题
 ![alt text](image.png)
 
 
@@ -31,7 +31,7 @@ weixin-mini-ai/
 └── src/
     ├── ai              # 模型推理方法
     ├── pages           # 页面文件存放目录
-    ├── sdkPackages     # TensorflowJS异步分包目录
+    ├── sdkPackages     # TensorFlow.js异步分包目录
     ├── utils           # 工具方法
     ├── App.vue         # 应用配置
     ├── main.js         # 入口文件
